@@ -1,0 +1,56 @@
+@import "../../variables/colors"
+
+.profile
+  min-height: 100vh
+  color: #f3f3f3
+  &__img
+    border-radius: 10px
+    padding: 15px
+    background-color: rgba(#fff, 0.3)
+    display: flex
+    justify-content: center
+    width: 90%
+    height: 520px
+    img
+      width: 100%
+  &__info
+    h2
+      color: $main_color_yellow
+    &__title
+      margin: 20px 0
+      padding: 0 15px
+      background-color: rgba(#fff, 0.3)
+      color: $main_color_yellow
+      font-weight: 600
+      box-shadow: 0 3px 7px rgba(174, 170, 170, 0.04), 0 3px 7px rgb(193, 199, 224)
+    li
+      list-style-type: none
+      font-weight: 500
+      display: flex
+      align-items: center
+      margin-bottom: 5px
+
+      &:before
+        content: ''
+        width: 20px
+        height: 20px
+        display: inline-block
+        background: url("../../images/pokeball.png")
+        background-size: contain
+        margin-right: 5px
+
+
+
+
+    &__stats
+      padding: 0
+      display: flex
+      flex-wrap: wrap
+      li
+        width: 50%
+
+@media screen and (max-width: 720px)
+  .profile
+    &__stats
+      li
+        width: 100%

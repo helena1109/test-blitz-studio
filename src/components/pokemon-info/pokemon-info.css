@@ -1,0 +1,59 @@
+.profile {
+  min-height: 100vh;
+  color: #f3f3f3;
+}
+.profile__img {
+  border-radius: 10px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  height: 520px;
+}
+.profile__img img {
+  width: 100%;
+}
+.profile__info h2 {
+  color: #f5f50f;
+}
+.profile__info__title {
+  margin: 20px 0;
+  padding: 0 15px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #f5f50f;
+  font-weight: 600;
+  box-shadow: 0 3px 7px rgba(174, 170, 170, 0.04), 0 3px 7px #c1c7e0;
+}
+.profile__info li {
+  list-style-type: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.profile__info li:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url("../../images/pokeball.png");
+  background-size: contain;
+  margin-right: 5px;
+}
+.profile__info__stats {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.profile__info__stats li {
+  width: 50%;
+}
+
+@media screen and (max-width: 720px) {
+  .profile__stats li {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=pokemon-info.css.map */

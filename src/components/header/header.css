@@ -1,0 +1,74 @@
+.header {
+  background-color: #f5f50f;
+  height: 120px;
+  margin-bottom: 20px;
+  padding: 15px 40px;
+  box-shadow: 0 8px 15px rgba(245, 239, 239, 0.18), 0 5px 10px rgba(243, 241, 241, 0.2);
+  display: flex;
+  justify-content: space-between;
+}
+.header-logo {
+  width: 300px;
+  height: 90%;
+}
+.header-logo img {
+  height: 100%;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-nav ul {
+  display: flex;
+}
+.header-nav li {
+  margin-right: 30px;
+  list-style: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #3d63b0;
+  font-weight: 600;
+}
+.header-nav li:hover {
+  text-decoration: underline;
+}
+.header__burger {
+  display: none;
+  font-size: 2rem;
+}
+
+.drawer-nav {
+  padding: 20px 0;
+}
+.drawer-nav li {
+  list-style: none;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.ant-drawer-body {
+  background: url("../../images/bc.jpg") center top;
+}
+
+.ant-drawer button {
+  color: #f5f50f;
+}
+
+@media screen and (max-width: 720px) {
+  .header {
+    padding: 10px;
+  }
+  .header-nav {
+    display: none;
+  }
+  .header__burger {
+    display: flex;
+    align-items: center;
+  }
+  .header__burger .fa {
+    color: #3d63b0;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

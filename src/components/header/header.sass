@@ -1,0 +1,59 @@
+@import "../../variables/colors"
+
+.header
+  background-color: $main_color_yellow
+  height: 120px
+  margin-bottom: 20px
+  padding: 15px 40px
+  box-shadow: $shadow
+  display: flex
+  justify-content: space-between
+  &-logo
+    width: 300px
+    height: 90%
+    img
+      height: 100%
+  &-nav
+    display: flex
+    align-items: center
+    ul
+      display: flex
+    li
+      margin-right: 30px
+      list-style: none
+      font-size: 1.2rem
+      cursor: pointer
+      color: $main_color_blue
+      font-weight: 600
+      &:hover
+        text-decoration: underline
+  &__burger
+    display: none
+    font-size: 2rem
+.drawer-nav
+  padding: 20px 0
+  li
+    list-style: none
+    font-size: 1.2rem
+    margin-bottom: 20px
+    font-weight: 600
+.ant-drawer-body
+  background: url("../../images/bc.jpg") center top
+.ant-drawer
+  button
+    color: $main_color_yellow
+
+
+
+
+
+@media screen and (max-width: 720px)
+  .header
+    padding: 10px
+    &-nav
+      display: none
+    &__burger
+      display: flex
+      align-items: center
+      .fa
+        color: $main_color_blue
